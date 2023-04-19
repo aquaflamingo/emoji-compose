@@ -7,3 +7,32 @@ Hear ye! Hear ye! For too long we proud, brave, and cheerful hearted emoji users
 
 Emoji Compose enables you to download precious Slack emojis from one workspace and transfer them to another through use of a standardized file format!
 
+## Usage 
+
+- Get a Slack Bot Token
+- You need `emoji:read` permissions
+
+```bash
+
+bundle exec exe/emoji_compose pull --slack-token="your-slack-token" --name="emoji-freedom"
+
+# Created emoji-compose.yml 
+```
+
+## Generated file 
+
+```
+---
+workspace: test
+emojis:
+- black_square:
+    image: url to slack 
+    slackcode: ":black_square:"
+- simple_smile:
+    image: url to slack 
+    slackcode: ":simple_smile:"
+version: 0.0.1
+```
+
+## Future ideas 
+- Option to download the image files for Slack independence

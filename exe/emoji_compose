@@ -1,0 +1,6 @@
+#!/usr/bin/ruby 
+
+require 'emoji_compose/cli'
+
+EmojiCompose::CLI.start
+
